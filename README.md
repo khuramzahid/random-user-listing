@@ -1,46 +1,93 @@
-# Getting Started with Create React App
+# Random User Listing
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React application built with TypeScript that allows users to view a list of random users with pagination, search functionality, and filtering by gender. Users can also navigate to a detailed profile page for each user.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Features](#features)
+- [Setup](#setup)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Running the Application](#running-the-application)
+- [Troubleshooting](#troubleshooting)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **User Listing**: Displays a list of users fetched from the Random User Generator API.
+- **Pagination**: Navigate through multiple pages of users.
+- **Search Functionality**: Filter users by name using a search input.
+- **Gender Filtering**: Filter users by gender.
+- **Profile Navigation**: Click on a user's name to view their detailed profile.
+- **Persistent Filters**: Filters persist even when navigating away and returning to the user list.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Setup
 
-### `npm test`
+1. **Clone the repository:**
+   ```bash
+   git clone https://<GITHUB_ACCESS_TOKEN>@github.com/khuramzahid/random-user-listing.git
+   cd random-user-listing
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-### `npm run build`
+## Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Start the development server:**
+   ```bash
+   npm start
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Open the application in your browser:**
+   - Navigate to `http://localhost:3000` to view the application.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Explore the features:**
+   - **User List**: Browse through the paginated list of users.
+   - **Search**: Use the search input to filter users by name.
+   - **Gender Filter**: Select a gender from the dropdown to filter users.
+   - **Profile Page**: Click on a user's name to view their detailed profile.
 
-### `npm run eject`
+## Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+random-user-listing/
+├── node_modules/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── components/
+│   │   ├── UserList.tsx
+│   │   └── UserProfile.tsx
+│   ├── App.tsx
+│   ├── index.css
+│   ├── index.tsx
+│   └── ...
+├── package.json
+├── tsconfig.json
+└── ...
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **`src/components/UserList.tsx`**: Component for displaying the user list with pagination, search, and filtering.
+- **`src/components/UserProfile.tsx`**: Component for displaying detailed information about a single user.
+- **`src/App.tsx`**: Main application component with routing.
+- **`src/index.tsx`**: Entry point for the React application.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Running the Application
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. **Ensure you have the required dependencies installed:**
+   ```bash
+   npm install
+   ```
 
-## Learn More
+2. **Start the development server:**
+   ```bash
+   npm start
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. **Access the application:**
+   - Open your web browser and go to `http://localhost:3000`.
